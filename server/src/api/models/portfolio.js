@@ -6,7 +6,7 @@ from timeline
          left join time_icons ti on timeline.id = ti.tid
          left join icons i on i.id = ti.iid
 group by title, subtitle, description, side, timeline.id
-order by timeline.id;`);
+order by timeline.id desc;`);
 
 const dbGetWebProjects = () =>
   query(`select w.name, description,titleimage, array_agg(i.name) as icons from web_projects w
