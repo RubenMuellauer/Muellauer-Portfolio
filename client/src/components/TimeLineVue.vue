@@ -30,7 +30,7 @@ portfolioStore.fetchTimeline();
               :key="i"
               class="q-ml-md q-mr-md"
               style="width: 50px"
-              :src="`http://localhost:3001/images/icons/${i}`"
+              :src="`https://muellauer-portfolio.onrender.com/images/icons/${i}`"
             />
           </div>
         </div>
@@ -44,7 +44,7 @@ portfolioStore.fetchTimeline();
               :key="i"
               class="q-ml-md q-mr-md"
               style="width: 50px"
-              :src="`http://localhost:3001/images/icons/${i}`"
+              :src="`https://muellauer-portfolio.onrender.com/images/icons/${i}`"
             />
           </div>
         </div>

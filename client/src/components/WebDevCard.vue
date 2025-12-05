@@ -6,7 +6,7 @@ const emits = defineEmits('dialogue');
 <template>
   <q-card style="width: 25rem" class="zoom q-mt-xl q-ml-lg q-mb-xl" v-for="w in web" :key="w">
     <img
-      :src="`http://localhost:3001/images/backgrounds/${w.titleimage}`"
+      :src="`https://muellauer-portfolio.onrender.com/images/backgrounds/${w.titleimage}`"
       @click="emits('dialogue', w)"
     />
 
@@ -18,7 +18,7 @@ const emits = defineEmits('dialogue');
           :key="i"
           class="q-ml-sm q-mt-sm q-mr-sm"
           style="width: 40px"
-          :src="`http://localhost:3001/images/icons/${i}`"
+          :src="`https://muellauer-portfolio.onrender.com/images/icons/${i}`"
         />
       </div>
     </q-card-section>

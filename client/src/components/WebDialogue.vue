@@ -7,9 +7,7 @@ defineProps({ w: Object });
 <template>
   <q-dialog v-model="toogleDialog" class="row justify-center">
     <q-card style="width: 50rem" class="q-mt-xl q-mb-xl">
-      <img
-        :src="`http://localhost:3001/images/backgrounds/${w.titleimage}`"
-      />
+      <img :src="`https://muellauer-portfolio.onrender.com/images/backgrounds/${w.titleimage}`" />
       <q-card-section>
         <div class="text-h6 q-mt-md text-center" style="font-weight: bold">{{ w.name }}</div>
         <div class="q-mt-md" v-html="w.description"></div>
@@ -22,7 +20,7 @@ defineProps({ w: Object });
             :key="i"
             class="q-ml-lg q-mt-sm q-mr-lg"
             style="width: 40px"
-            :src="`http://localhost:3001/images/icons/${i}`"
+            :src="`https://muellauer-portfolio.onrender.com/images/icons/${i}`"
           />
         </div>
       </q-card-section>

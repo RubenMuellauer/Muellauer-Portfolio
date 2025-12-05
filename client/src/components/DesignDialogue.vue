@@ -7,7 +7,7 @@ defineProps({ w: Object });
 <template>
   <q-dialog v-model="toogleDialogDesign" class="row justify-center">
     <q-card class="q-mt-xl q-mb-xl">
-      <img :src="`http://localhost:3001/images/designs/${w}`" />
+      <img :src="`https://muellauer-portfolio.onrender.com/images/designs/${w}`" />
     </q-card>
   </q-dialog>
 </template>

@@ -59,7 +59,14 @@ const imageSelect = (img) => {
           </p>
         </div>
         <div class="col-12 col-md-6">
-          <video src="../assets/AkztarTrailer.mp4" autoplay loop contain controls style="width: 100%" />
+          <video
+            src="../assets/AkztarTrailer.mp4"
+            autoplay
+            loop
+            contain
+            controls
+            style="width: 100%"
+          />
         </div>
       </div>
 
@@ -74,7 +81,7 @@ const imageSelect = (img) => {
         <img
           v-for="d in designs"
           :key="d"
-          :src="`http://localhost:3001/images/designs/${d.name}`"
+          :src="`https://muellauer-portfolio.onrender.com/images/designs/${d.name}`"
           style="width: 28rem"
           class="q-ma-md zoom"
           @click="imageSelect(d.name)"
